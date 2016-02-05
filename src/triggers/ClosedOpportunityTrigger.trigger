@@ -1,4 +1,3 @@
-  //testpush
   trigger ClosedOpportunityTrigger on Opportunity (after insert, after update) {
 //list<opportunity>opp=[select id,StageName,CloseDate from opportunity  where id in:Trigger.newmap.keyset()];
 List<Task> taskList = new List<Task>();
